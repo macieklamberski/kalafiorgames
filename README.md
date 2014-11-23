@@ -14,7 +14,7 @@ CREATE TABLE games (
 );
 
 CREATE TABLE files (
-  id integer PRIMARY KEY AUTOINCREMENT,
+  id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
   slug text NOT NULL,
   url text NOT NULL,
   downloads integer NOT NULL
