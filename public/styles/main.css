@@ -122,6 +122,18 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   content: "\f001";
 }
 
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-rss:before {
+  content: "\f09e";
+}
+
 .icon-installer:before {
   content: "\e600";
 }
@@ -416,10 +428,11 @@ nav[role] .selected a {
 }
 
 .downloads a {
+  position: relative;
   float: left;
   background: no-repeat left center;
   line-height: 27px;
-  padding-left: 40px;
+  padding-left: 54px;
 }
 
 .downloads a:hover {
@@ -427,6 +440,7 @@ nav[role] .selected a {
 }
 
 .downloads span {
+  display: block;
   font-weight: bold;
 }
 
@@ -439,22 +453,13 @@ nav[role] .selected a {
   display: block;
 }
 
-/* Downloads types (icons from http://pc.de/icons/#Dusseldorf) */
-
-.downloads .installer a {
-  background-image: url("../images/installer-icon.png");
-}
-
-.downloads .appstore a {
-  background-image: url("../images/iphone-icon.png");
-}
-
-.downloads .archive a {
-  background-image: url("../images/archive-icon.png");
-}
-
-.downloads .soundtrack a {
-  background-image: url("../images/soundtrack-icon.png");
+.downloads i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  line-height: 54px;
+  color: #444;
 }
 
 /*  Media section
