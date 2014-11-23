@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'kalafiorgames.rb'
+require File.dirname(__FILE__) + '/kalafiorgames.rb'
 require 'net/http'
 
 run Sinatra::Application
