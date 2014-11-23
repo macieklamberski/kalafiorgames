@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{block:PostTitle}{PostTitle}{/block:PostTitle}{block:IndexPage}{Title}{/block:IndexPage}</title>
+    <meta name="description" content="Home of games made by Maciej Lamberski. Created to allow player have fun and gain something from the experience.">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <link href="//kalafiorgames.com/favicon.ico" rel="shortcut icon">
+    <link href="//kalafiorgames.com/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="//kalafiorgames.com/images/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+    <link href="//kalafiorgames.com/styles/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+    <link href="http://feeds.feedburner.com/kalafiorgames" rel="alternate" type="application/rss+xml">
+  </head>
+  <body class="wrapper clearfix">
+    <header role="banner" class="clearfix">
+      <a href="http://kalafiorgames.com" class="logo">
+        <img src="//kalafiorgames.com/images/logo.png" alt="Kalafior Games logo">
+      </a>
+      <nav role="navigation">
+        <h3 class="outline">Main navigation</h3>
+        <ul>
+          <li><a href="http://kalafiorgames.com">Games</a></li>
+          <li class="selected"><a href="http://blog.kalafiorgames.com">Blog</a></li>
+          <li><a href="http://kalafiorgames.com/about">About</a></li>
+          <li><a href="http://facebook.com/kalafiorgames" rel="external">Facebook</a></li>
+          <li><a href="http://twitter.com/kalafiorgames" rel="external">Twitter</a></li>
+          <li><a href="http://feeds.feedburner.com/kalafiorgames" rel="external">RSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div role="main">
+      {block:IndexPage}
+        <section class="blog">
+          <h1 class="outline">Blog</h1>
+      {/block:IndexPage}
+
+      {block:Posts}
+        {block:Text}
+          <article class="entry">
+            {block:Title}
+              {block:IndexPage}<h2 class="heading heading-primary"><a href="{Permalink}">{Title}</a></h2>{/block:IndexPage}
+              {block:PermalinkPage}<h1 class="heading heading-primary">{Title}</h1>{/block:PermalinkPage}
+            {/block:Title}
+            <div class="formatting">
+              {Body}
+            </div>
+            {block:Date}
+              <footer>
+                <p class="minor small"><a href="{Permalink}">Posted on <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}" pubdate>{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</time></a>.</p>
+              </footer>
+            {/block:Date}
+          </article>
+        {/block:Text}
+      {/block:Posts}
+
+      {block:IndexPage}
+        {block:Pagination}
+          <nav class="pagination">
+            <h3 class="outline">Pagination</h3>
+            <ul>
+              {block:PreviousPage}<li class="previous"><a href="{PreviousPage}">&larr; Newer</a></li>{/block:PreviousPage}
+              {block:NextPage}<li class="next"><a href="{NextPage}">Older &rarr;</a></li>{/block:NextPage}
+            </ul>
+          </nav>
+        {/block:Pagination}
+        </section>
+      {/block:IndexPage}
+    </div>
+    <script src="//kalafiorgames.com/scripts/analytics.js" async></script>
+  </body>
+</html>
