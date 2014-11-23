@@ -9,8 +9,6 @@ APP_ROOT = File.expand_path(File.dirname(__FILE__))
 DataMapper::setup(:default, "sqlite3://#{APP_ROOT}/db.sqlite3")
 DataMapper::Model.raise_on_save_failure = true if development?
 
-STATIC_URL = development? ? '' : '//static.kalafiorgames.com'
-
 # -- Models --------------------------------------------------------------------
 
 class Game

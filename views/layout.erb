@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1.0">
     <title><%= @title %></title>
     <% if @description %><meta name="description" content="<%= @description %>"><% end %>
-    <link href="<%= STATIC_URL %>/favicon.ico" rel="shortcut icon">
-    <link href="<%= STATIC_URL %>/images/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="<%= STATIC_URL %>/images/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
-    <link href="<%= STATIC_URL %>/styles/main.css" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+    <link href="/styles/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -18,7 +18,7 @@
     <header role="banner" class="clearfix">
       <% if @page == "index" %><h1 class="outline">Kalafior Games</h1><% end %>
       <a href="/" class="logo">
-        <img src="<%= STATIC_URL %>/images/logo.png" alt="Kalafior Games logo">
+        <img src="/images/logo.png" alt="Kalafior Games logo">
       </a>
       <nav role="navigation">
         <h3 class="outline">Main navigation</h3>
@@ -33,6 +33,6 @@
       </nav>
     </header>
 <%= yield %>
-    <script async src="<%= STATIC_URL %>/scripts/analytics.js"></script>
+    <script async src="/scripts/analytics.js" async></script>
   </body>
 </html>
