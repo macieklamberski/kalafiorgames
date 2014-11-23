@@ -1,6 +1,7 @@
 require 'sinatra'
-require 'dm-core'
 require 'net/http'
+require 'dm-core'
+require 'dm-sqlite-adapter'
 
 # -- Configuration -------------------------------------------------------------
 
