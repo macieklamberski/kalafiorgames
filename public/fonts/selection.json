@@ -1,0 +1,125 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M160 960v-864h320v64h-64v64h64v64h-64v64h64v64h-64v64h64v64h64v-64h-64v-64h64v-64h-64v-64h64v-64h-64v-64h64v-64h95.712v192.288h192.288v671.712h-672zM544 576h-128v224h128v-224zM512 766.016h-64v-64h64v64zM672 96h7.84l152.16 152.16v5.856h-160v-158.016z"
+				],
+				"attrs": [
+					{
+						"visibility": false
+					}
+				],
+				"tags": [
+					"zip",
+					"compress",
+					"file"
+				],
+				"grid": 32
+			},
+			"attrs": [
+				{
+					"visibility": false
+				}
+			],
+			"properties": {
+				"order": 5,
+				"id": 0,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "archive"
+			},
+			"setIdx": 0,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M0 914.286q0-28.571 19.429-50.857t49.143-34.571 59.143-18.286 55.143-6q60 0 109.714 22.286v-552.571q0-17.714 10.857-32.286t28-20.286l475.429-146.286q6.857-2.286 16-2.286 22.857 0 38.857 16t16 38.857v640q0 28.571-19.429 50.857t-49.143 34.571-59.143 18.286-55.143 6-55.143-6-59.143-18.286-49.143-34.571-19.429-50.857 19.429-50.857 49.143-34.571 59.143-18.286 55.143-6q60 0 109.714 22.286v-306.857l-438.857 135.429v405.143q0 28.571-19.429 50.857t-49.143 34.571-59.143 18.286-55.143 6-55.143-6-59.143-18.286-49.143-34.571-19.429-50.857z"
+				],
+				"attrs": [],
+				"tags": [
+					"music"
+				],
+				"defaultCode": 61441,
+				"grid": 14
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1,
+				"order": 6,
+				"prevSize": 32,
+				"code": 61441,
+				"name": "soundtrack"
+			},
+			"setIdx": 2,
+			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
+					"M956.621 583.578l-161.178-383.59c-12.698-25.6-46.49-46.541-75.11-46.541l-104.909 0 19.456 208.128h138.24l-261.12 216.576-261.12-216.576h138.24l19.456-208.077-104.858-0c-28.57 0-62.362 20.941-75.11 46.541l-161.178 383.59c-12.8 25.6-19.354 69.632-14.694 97.894l34.816 188.723c4.71 28.211 31.898 51.302 60.467 51.302h728.013c28.621 0 55.808-23.091 60.518-51.302l34.816-188.723c4.608-28.262-1.946-72.346-14.746-97.946zM886.784 718.029l-13.21 76.902c-3.994 29.542-30.618 53.709-59.085 53.709h-604.979c-28.518 0-55.142-24.166-59.085-53.709l-13.261-76.902c-3.942-29.542 16.179-53.709 44.698-53.709h660.275c28.57 0.051 48.64 24.166 44.646 53.709z"
+				],
+				"tags": [
+					"install",
+					"download",
+					"store",
+					"storage",
+					"save"
+				],
+				"grid": 20
+			},
+			"properties": {
+				"id": 165,
+				"order": 4,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "installer"
+			},
+			"setIdx": 3,
+			"iconIdx": 165
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"search": ""
+	}
+}
