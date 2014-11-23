@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+    <% if @description %><meta name="description" content="<%= @description %>"><% end %>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/images/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+    <link href="/styles/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="http://feeds.feedburner.com/kalafiorgames" rel="alternate" type="application/rss+xml">
+  </head>
+  <body class="wrapper clearfix">
+    <header role="banner" class="clearfix">
+      <% if @page == "index" %><h1 class="outline">Kalafior Games</h1><% end %>
+      <a href="/" class="logo">
+        <img src="/images/logo.png" alt="Kalafior Games logo">
+      </a>
+      <nav role="navigation">
+        <h3 class="outline">Main navigation</h3>
+        <ul>
+          <li<%= selected_if("index") || selected_if("game") %>><a href="/">Games</a></li>
+          <li><a href="http://blog.kalafiorgames.com">Blog</a></li>
+          <li<%= selected_if("about") %>><a href="/about">About</a></li>
+          <li><a href="http://facebook.com/kalafiorgames" rel="external">Facebook</a></li>
+          <li><a href="http://twitter.com/kalafiorgames" rel="external">Twitter</a></li>
+          <li><a href="http://feeds.feedburner.com/kalafiorgames" rel="external">RSS</a></li>
+        </ul>
+      </nav>
+    </header>
+<%= yield %>
+    <script async src="/scripts/analytics.js"></script>
+  </body>
+</html>
