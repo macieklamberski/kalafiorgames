@@ -14,10 +14,10 @@ CREATE TABLE games (
 );
 
 CREATE TABLE files (
-  id integer,
-  slug text,
-  url text,
-  downloads integer
+  id integer PRIMARY KEY AUTOINCREMENT,
+  slug text NOT NULL,
+  url text NOT NULL,
+  downloads integer NOT NULL
 );
 ```
 
