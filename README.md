@@ -2,7 +2,7 @@
 
 This is repository with source of [Kalafior Games](http://kalafiorgames.com) - website with games made by me (Maciej Lamberski).
 
-## Technical info
+## Technical details
 
 Site is powered by [Sinatra](http://sinatrarb.com), some sort of microframework for quickly creating web applications in Ruby. It also uses SQLite database to store games and downloads count. Database structure is very, very simple:
 
