@@ -4,7 +4,7 @@ This is repository with source of [Kalafior Games](http://kalafiorgames.com) - w
 
 ## Technical details
 
-Site is powered by [Sinatra](http://sinatrarb.com), some sort of microframework for quickly creating web applications in Ruby. It also uses SQLite database to store games and downloads count. Database structure is very, very simple:
+Site is powered by [Sinatra](http://sinatrarb.com), a micro framework for quickly creating web applications in Ruby. It also uses SQLite database to store games and downloads count. Database structure is very, very simple:
 
 ```sql
 CREATE TABLE games (
