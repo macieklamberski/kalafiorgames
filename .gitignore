@@ -1,5 +1,5 @@
 .DS_Store
 .env
-*.sqlite3
+*.sqlite
 public/files
 resources
