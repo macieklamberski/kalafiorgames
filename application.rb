@@ -1,10 +1,12 @@
-APP_ROOT = File.expand_path(File.dirname(__FILE__))
+Bundler.require
+Dotenv.load
 
+APP_ROOT = File.expand_path(File.dirname(__FILE__))
 DataMapper::setup(:default, "sqlite3://#{APP_ROOT}/db.sqlite3")
-DataMapper::Model.raise_on_save_failure = true if development?
 
 class Game
   include DataMapper::Resource
+
   property :id,       Serial
   property :slug,     String
   property :template, String
@@ -12,9 +14,10 @@ end
 
 class File
   include DataMapper::Resource
+
   property :id,        Serial
   property :slug,      String
-  property :url,       Text, :length => 0..1000
+  property :url,       Text
   property :downloads, Integer, :default => 0
 end
 
