@@ -2,7 +2,7 @@ Bundler.require
 Dotenv.load
 
 APP_ROOT = File.expand_path(File.dirname(__FILE__))
-DataMapper::setup(:default, "sqlite3://#{APP_ROOT}/db.sqlite3")
+DataMapper::setup(:default, "sqlite3://#{APP_ROOT}/#{ENV['DB_PATH']}")
 
 class Game
   include DataMapper::Resource
