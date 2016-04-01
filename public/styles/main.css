@@ -543,9 +543,10 @@ header[role] .logo {
   height: 162px;
 }
 
-header[role] .logo img {
+header[role] .logo svg {
   width: 100%;
   display: block;
+  fill: #444;
 }
 
 /* Content */
