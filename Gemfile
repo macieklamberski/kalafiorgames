@@ -8,6 +8,7 @@ gem 'dotenv'
 
 group :development do
   gem 'capistrano'
+  gem 'capistrano-rvm'
   gem 'capistrano-bundler'
   gem 'capistrano-passenger'
 end

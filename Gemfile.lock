@@ -17,6 +17,9 @@ GEM
       sshkit (~> 1.2)
     capistrano-passenger (0.2.0)
       capistrano (~> 3.0)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     data_objects (0.10.17)
       addressable (~> 2.1)
     dm-core (1.2.1)
@@ -61,6 +64,7 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-passenger
+  capistrano-rvm
   dm-core
   dm-sqlite-adapter
   dotenv
