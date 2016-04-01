@@ -1,8 +1,3 @@
-require 'sinatra'
-require 'net/http'
-require 'dm-core'
-require 'dm-sqlite-adapter'
-
 # -- Configuration -------------------------------------------------------------
 
 APP_ROOT = File.expand_path(File.dirname(__FILE__))
