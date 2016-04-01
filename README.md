@@ -1,6 +1,6 @@
 # Kalafior Games
 
-This is repository with source of [Kalafior Games](http://kalafiorgames.com) - website with games made by me (Maciej Lamberski).
+This is repository with source of [Kalafior Games](http://kalafiorgames.com)—website with games made by me.
 
 ## Technical details
 
