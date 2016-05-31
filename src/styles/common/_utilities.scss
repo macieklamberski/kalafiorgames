@@ -1,0 +1,55 @@
+.outline {
+  @include a11y-only();
+}
+
+.accessibility-nav {
+  position: absolute;
+  top: 0;
+  left: -9999em;
+  z-index: 1000;
+
+  a {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+
+  a:active,
+  a:focus {
+    left: 9999em;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 51px 0px 54px;
+}
+
+.outline {
+  display: none;
+}
+
+.minor {
+  color: #aaa;
+}
+
+.minor a {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.minor a:hover {
+  color: #666;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

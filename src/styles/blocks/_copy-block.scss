@@ -1,0 +1,51 @@
+.copy-block {
+  line-height: rem($tick-size);
+  color: #555;
+
+  blockquote > div > *,
+  blockquote > *,
+  > * {
+    margin-top: rem($tick-size);
+  }
+
+  blockquote > :first-child,
+  > :first-child {
+    margin-top: 0;
+  }
+
+  .centered {
+    text-align: center;
+  }
+
+  ul,
+  ol {
+    padding-left: 0.9em;
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+
+  blockquote {
+    padding-left: 1em;
+    color: $color--minor;
+    border-left: 0.125em solid $color--border;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,71 @@
+{% extends '_layout.twig' %}
+
+{% set selected = 'games' %}
+
+{% set title %}
+  Archive
+{% endset %}
+
+{% block content %}
+  <div class="spacing spacing--double">
+    <div class="spacing">
+      <h1 class="heading heading--page">{{ title }}</h1>
+      <div class="copy-block">
+        <p>Hello and welcome in secret Kalafior Games Archive! Here, on carefully arranged shelves, lay boxes with all the games that this whole journey began with. So cool.</p>
+      </div>
+      <ul class="spacing">
+        <li>
+          <a href="robot-robus" class="game">
+            <img src="images/robot-robus/thumb.png" alt="" class="game__poster">
+            <h2 class="game__title">Robot Robuś</h2>
+            <dl class="game__meta">
+              <dt>Platform</dt>
+              <dd>Windows</dd>
+              <dt>Language</dt>
+              <dd>Polish</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="kromka-and-chleba" class="game">
+            <img src="images/kromka-and-chleba/thumb.png" alt="" class="game__poster">
+            <h2 class="game__title">Kromka &amp; Chleba</h2>
+            <dl class="game__meta">
+              <dt>Platform</dt>
+              <dd>Windows</dd>
+              <dt>Language</dt>
+              <dd>Polish</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="zupojadek" class="game">
+            <img src="images/zupojadek/thumb.png" alt="" class="game__poster">
+            <h2 class="game__title">Zupojadek</h2>
+            <dl class="game__meta">
+              <dt>Platform</dt>
+              <dd>Windows</dd>
+              <dt>Language</dt>
+              <dd>Polish</dd>
+            </dl>
+          </a>
+        </li>
+        <li>
+          <a href="mega-hiper-japko-ekstrim" class="game">
+            <img src="images/mega-hiper-japko-ekstrim/thumb.png" alt="" class="game__poster">
+            <h2 class="game__title">Mega Hiper Japko Ekstrim</h2>
+            <dl class="game__meta">
+              <dt>Platform</dt>
+              <dd>Windows</dd>
+              <dt>Language</dt>
+              <dd>Polish</dd>
+            </dl>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="pagination">
+      <a href="">&larr; Return to Home page</a>
+    </nav>
+  </div>
+{% endblock %}

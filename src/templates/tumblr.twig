@@ -1,0 +1,56 @@
+{% extends '_layout.twig' %}
+
+{% set selected = 'blog' %}
+
+{% set tumblr = true %}
+
+{% set title %}
+  {block:PostTitle}{PostTitle}{/block:PostTitle}
+  {block:IndexPage}{Title}{/block:IndexPage}
+{% endset %}
+
+{% set description %}
+  Home of games made by Maciej Lamberski. Created to allow player have fun and gain something from the experience.
+{% endset %}
+
+{% block content %}
+  <div class="spacing spacing--double">
+    {block:Posts}
+      {block:Text}
+        <article class="spacing">
+          {block:Title}
+            {block:IndexPage}
+              <h2 class="heading">
+                <a href="{Permalink}">{Title}</a>
+              </h2>
+            {/block:IndexPage}
+            {block:PermalinkPage}
+              <h1 class="heading">{Title}</h1>
+            {/block:PermalinkPage}
+          {/block:Title}
+          <div class="copy-block">{Body}</div>
+          {block:Date}
+            <footer class="meta">
+              <a href="{Permalink}">
+                <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}" pubdate>{Month} {DayOfMonth}{DayOfMonthSuffix}, {Year}</time>
+              </a>
+            </footer>
+          {/block:Date}
+        </article>
+      {/block:Text}
+    {/block:Posts}
+
+    {block:IndexPage}
+      {block:Pagination}
+        <nav class="pagination">
+          {block:PreviousPage}
+            <a href="{PreviousPage}" class="pagination__prev">&larr; Newer</a>
+          {/block:PreviousPage}
+          {block:NextPage}
+            <a href="{NextPage}" class="pagination__next">Older &rarr;</a>
+          {/block:NextPage}
+        </nav>
+      {/block:Pagination}
+    {/block:IndexPage}
+  </div>
+{% endblock %}

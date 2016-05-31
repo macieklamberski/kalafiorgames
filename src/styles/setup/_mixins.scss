@@ -1,0 +1,31 @@
+@mixin clearfix() {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin a11y-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@mixin breakpoint($names...) {
+  @each $name in $names {
+    @media #{map-get($breakpoints, $name)} {
+      @content;
+    }
+  }
+}
+
+@function rem($size--desired) {
+  @return ($size--desired / $size--base) * 1rem;
+}
+
+@function trans($property, $duration: $duration--base, $delay: 0ms, $easing: ease-in-out) {
+  @return #{$property $duration $delay $easing};
+}

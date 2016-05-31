@@ -1,5 +1,4 @@
 .DS_Store
-.env
-*.sqlite
-public/files
-resources
+Thumbs.db
+node_modules
+dist

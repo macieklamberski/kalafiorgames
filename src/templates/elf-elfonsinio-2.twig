@@ -1,0 +1,54 @@
+{% extends '_layout.twig' %}
+
+{% set selected = 'games' %}
+
+{% set title %}
+  Elf Elfonsinio 2
+{% endset %}
+
+{% set description %}
+  Elf Elfonsinio 2 is another part of adventure of a goofy elf, Santa&apos;s helper, with whom he lives in peace and tranquility at the North Pole. This time our main character will get special and very responsible task from Santa.
+{% endset %}
+
+{% block content %}
+  <div class="spacing spacing--double">
+    <div class="spacing">
+      <h1 class="heading heading--page">{{ title }}</h1>
+      <div class="copy-block">
+        <p>{{ description }}</p>
+        <p>EE2 is a regular platform game (gather, ass level, avoid enemies). We will have to travel through 3 worlds imitating 3 seasons (summer, fall, winter). Each of the worlds will mark out many kinds of enemies and background elements.</p>
+      </div>
+    </div>
+    <section id="downloads">
+      <h2 class="outline">Downloads</h2>
+      <ul class="downloads">
+        <li>
+          <a href="downloads/elf-elfonsinio-2.exe">
+          {% include '_installer.svg' %}
+            <span>Installer (Windows)</span>
+            <small>EXE, 7 MB</small>
+          </a>
+        </li>
+        <li>
+          <a href="downloads/elf-elfonsinio-2-soundtrack.zip">
+          {% include '_soundtrack.svg' %}
+            <span>Soundtrack + Covers</span>
+            <small>Zipped MP3s, 10 MB</small>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="media">
+      <h2 class="outline">Media</h2>
+      <ul class="media spacing">
+        <li><img src="images/elf-elfonsinio-2/screen-1.png" alt="Screen #1"></li>
+        <li><img src="images/elf-elfonsinio-2/screen-2.png" alt="Screen #2"></li>
+        <li><img src="images/elf-elfonsinio-2/screen-3.png" alt="Screen #3"></li>
+        <li><img src="images/elf-elfonsinio-2/screen-4.png" alt="Screen #4"></li>
+        <li class="media__video media__video--wide">
+          <iframe src="https://youtube.com/embed/VeTGGX-sfTM?showinfo=0" allowfullscreen></iframe>
+        </li>
+      </ul>
+    </section>
+  </div>
+{% endblock %}

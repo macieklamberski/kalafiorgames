@@ -1,0 +1,15 @@
+.heading {
+  &, a {
+    font-size: 26px;
+    font-weight: 700;
+    color: $color--heading;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  a:hover {
+    color: $color--accent;
+  }
+}

@@ -1,0 +1,59 @@
+{% extends '_layout.twig' %}
+
+{% set selected = 'games' %}
+
+{% set title %}
+  Kalafior Games
+{% endset %}
+
+{% set description %}
+  Home of games made by Maciej Lamberski. Created to allow player have fun and gain something from the experience.
+{% endset %}
+
+{% block content %}
+  <div class="spacing spacing--double">
+    <ul class="spacing">
+      <li>
+        <a href="elf-elfonsinio-2" class="game">
+          <img src="images/elf-elfonsinio-2/thumb.png" alt="" class="game__poster">
+          <h2 class="game__title">Elf Elfonsinio 2</h2>
+          <dl class="game__meta">
+            <dt>Platform</dt>
+            <dd>Windows</dd>
+            <dt>Language</dt>
+            <dd>English</dd>
+            <dd>Polish</dd>
+          </dl>
+      </li>
+      <li>
+        <a href="zenek-zombie" class="game">
+          <img src="images/zenek-zombie/thumb.png" alt="" class="game__poster">
+          <h2 class="game__title">Zenek Zombie</h2>
+          <dl class="game__meta">
+            <dt>Platform</dt>
+            <dd>Windows</dd>
+            <dt>Language</dt>
+            <dd>English</dd>
+            <dd>Polish</dd>
+          </dl>
+        </a>
+      </li>
+      <li>
+        <a href="elf-elfonsinio" class="game">
+          <img src="images/elf-elfonsinio/thumb.png" alt="" class="game__poster">
+          <h2 class="game__title">Elf Elfonsinio</h2>
+          <dl class="game__meta">
+            <dt>Platform</dt>
+            <dd>Windows</dd>
+            <dt>Language</dt>
+            <dd>English</dd>
+            <dd>Polish</dd>
+          </dl>
+        </a>
+      </li>
+    </ul>
+    <nav class="pagination">
+      <a href="archive">Check out archive for older games &rarr;</a>
+    </nav>
+  </div>
+{% endblock %}

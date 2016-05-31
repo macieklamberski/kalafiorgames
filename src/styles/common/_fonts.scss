@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.rawgit.com/ethereum/ethdev-site/master/public/fonts/Proxima%20Nova%20Reg.eot'),
+       url('https://cdn.rawgit.com/ethereum/ethdev-site/master/public/fonts/Proxima%20Nova%20Reg.woff') format('woff'),
+       url('https://cdn.rawgit.com/ethereum/ethdev-site/master/public/fonts/Proxima%20Nova%20Reg.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.rawgit.com/ethereum/ethdev-site/master/public/fonts/Proxima%20Nova%20Bold.eot'),
+       url('https://cdn.rawgit.com/ethereum/ethdev-site/master/public/fonts/Proxima%20Nova%20Bold.woff') format('woff'),
+       url('https://cdn.rawgit.com/ethereum/ethdev-site/master/public/fonts/Proxima%20Nova%20Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}

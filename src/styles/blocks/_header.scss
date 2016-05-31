@@ -1,0 +1,41 @@
+.header {
+  width: $width--header;
+
+  &__logo {
+    margin-bottom: rem($tick-size);
+    color: $color--heading;
+
+    &::before {
+      display: none;
+    }
+
+    svg {
+      width: auto;
+      height: rem($tick-size * 5);
+    }
+  }
+
+  &__menu {
+    a {
+      position: relative;
+      color: $color--minor;
+
+      &:hover {
+        color: $color--accent;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -1em;
+        bottom: 0;
+        left: -1em;
+      }
+    }
+
+    &__selected a {
+      color: $color--base;
+    }
+  }
+}

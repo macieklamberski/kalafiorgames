@@ -1,0 +1,42 @@
+{% extends '_layout.twig' %}
+
+{% set selected = 'games' %}
+
+{% set title %}
+  Zupojadek
+{% endset %}
+
+{% set description %}
+  You take a role of Zupojadek—a boy that enjoys eating soups. Your task is to collect letters that made word ZUPPA. It&apos;s not an easy work, because you will have to be pitted with various enemies and expiring time.
+{% endset %}
+
+{% block content %}
+  <div class="spacing spacing--double">
+    <div class="spacing">
+      <h1 class="heading heading--page">{{ title }}</h1>
+      <div class="copy-block">
+        <p>{{ description }}</p>
+      </div>
+    </div>
+    <section id="downloads">
+      <h2 class="outline">Downloads</h2>
+      <ul class="downloads">
+        <li>
+          <a href="downloads/zupojadek.exe">
+            {% include '_installer.svg' %}
+            <span>Installer (Windows)</span>
+            <small>EXE, 1 MB</small>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="media">
+      <h2 class="outline">Media</h2>
+      <ul class="media spacing">
+        <li><img src="images/zupojadek/screen-1.png" alt="Screen #1"></li>
+        <li><img src="images/zupojadek/screen-2.png" alt="Screen #2"></li>
+        <li><img src="images/zupojadek/screen-4.png" alt="Screen #4"></li>
+      </ul>
+    </section>
+  </div>
+{% endblock %}

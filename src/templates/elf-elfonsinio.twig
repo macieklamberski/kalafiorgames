@@ -1,0 +1,43 @@
+{% extends '_layout.twig' %}
+
+{% set selected = 'games' %}
+
+{% set title %}
+  Elf Elfonsinio
+{% endset %}
+
+{% set description %}
+  Elf Elfonsinio is a Christmas-themed arcade game. Elf was called to Claus Clausie&apos;s office. He have done a bad thing—carved toothpicks from Clausie&apos;s sleights. As a punishment he has to help Clausie in dressing the Christmas Tree.
+{% endset %}
+
+{% block content %}
+  <div class="spacing spacing--double">
+    <div class="spacing">
+      <h1 class="heading heading--page">{{ title }}</h1>
+      <div class="copy-block">
+        <p>{{ description }}</p>
+        <p>Player&apos;s task is to hang christmas tree decorations on assigned place. You can choose between seven types of ornaments. Every good spot is scored, but if you hang a wrong bubble, you will pay for it by decreasing all of the score earlier received. When you loose all lifes, your game is over. Short game with good sound and music and pleasureable Christmas theme.</p>
+      </div>
+    </div>
+    <section id="downloads">
+      <h2 class="outline">Downloads</h2>
+      <ul class="downloads">
+        <li>
+          <a href="downloads/elf-elfonsinio.exe">
+            {% include '_installer.svg' %}
+            <span>Installer (Windows)</span>
+            <small>EXE, 4 MB</small>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="media">
+      <h2 class="outline">Media</h2>
+      <ul class="media spacing">
+        <li><img src="images/elf-elfonsinio/screen-2.png" alt="Screen #2"></li>
+        <li><img src="images/elf-elfonsinio/screen-4.png" alt="Screen #4"></li>
+        <li><img src="images/elf-elfonsinio/screen-3.png" alt="Screen #3"></li>
+      </ul>
+    </section>
+  </div>
+{% endblock %}

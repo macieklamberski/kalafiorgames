@@ -1,0 +1,47 @@
+{% spaceless %}
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+      {% if description %}
+        <meta name="description" content="{{ description | trim }}">
+      {% endif %}
+      <title>{{ title | trim }}</title>
+      <base href="{{ tumblr ? 'http://kalafiorgames.com' : '' }}/">
+      <link href="{{ tumblr ? '//assets.kalafiorgames.com' : '' }}/images/favicon.png" rel="shortcut icon">
+      <link href="{{ tumblr ? '//assets.kalafiorgames.com' : '' }}/styles/main.min.css" rel="stylesheet">
+      <link href="http://feeds.feedburner.com/kalafiorgames" rel="alternate" type="application/rss+xml">
+    </head>
+    <body>
+      <header class="header">
+        <a href="" class="header__logo">
+          {% include '_logo.svg' %}
+        </a>
+        <nav class="header__menu">
+          <ul>
+            <li{% if selected == 'games' %} class="header__menu__selected"{% endif %}>
+              <a href="">Games</a>
+            </li>
+            <li{% if selected == 'blog' %} class="header__menu__selected"{% endif %}>
+              <a href="http://blog.kalafiorgames.com">Blog</a>
+            </li>
+            <li{% if selected == 'about' %} class="header__menu__selected"{% endif %}>
+              <a href="about">About</a>
+            </li>
+            <li>
+              <a href="http://facebook.com/kalafiorgames" rel="external">Facebook</a>
+            </li>
+            <li>
+              <a href="http://twitter.com/kalafiorgames" rel="external">Twitter</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content spacing">
+        {% block content %}{% endblock %}
+      </main>
+      <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-78523892-1', 'auto');ga('send', 'pageview');</script>
+    </body>
+  </html>
+{% endspaceless %}

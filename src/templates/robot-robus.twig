@@ -1,0 +1,42 @@
+{% extends '_layout.twig' %}
+
+{% set selected = 'games' %}
+
+{% set title %}
+  Robot Robuś
+{% endset %}
+
+{% set description %}
+  You take a role of Robuś the Robot, who is working for SAC (Secret Agents Company). Your superior is Boss Bossy, who is responsible for assigning tasks to you. Game is divided into 5 missions with separate worlds and various dangers.
+{% endset %}
+
+{% block content %}
+  <div class="spacing spacing--double">
+    <div class="spacing">
+      <h1 class="heading heading--page">{{ title }}</h1>
+      <div class="copy-block">
+        <p>{{ description }}</p>
+      </div>
+    </div>
+    <section id="downloads">
+      <h2 class="outline">Downloads</h2>
+      <ul class="downloads">
+        <li>
+          <a href="downloads/robot-robus.exe">
+            {% include '_installer.svg' %}
+            <span>Installer (Windows)</span>
+            <small>EXE, 1 MB</small>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="media">
+      <h2 class="outline">Media</h2>
+      <ul class="media spacing">
+        <li><img src="images/robot-robus/screen-1.png" alt="Screen #1"></li>
+        <li><img src="images/robot-robus/screen-3.png" alt="Screen #4"></li>
+        <li><img src="images/robot-robus/screen-4.png" alt="Screen #3"></li>
+      </ul>
+    </section>
+  </div>
+{% endblock %}

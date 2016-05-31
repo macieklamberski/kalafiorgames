@@ -1,0 +1,16 @@
+.spacing {
+  > * {
+    margin-top: rem($tick-size);
+  }
+
+  &--double {
+    > * {
+      margin-top: rem($tick-size * 2);
+    }
+  }
+
+  > .outline + *,
+  > :first-child {
+    margin-top: 0;
+  }
+}
