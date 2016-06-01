@@ -31,6 +31,7 @@ body {
   line-height: rem($tick-size);
   color: $color--base;
   max-width: rem($width--header + $tick-size + $width--content);
+  min-width: rem(320px);
   margin: 0 auto;
   padding: rem($tick-size * 2) rem($tick-size / 2);
 
