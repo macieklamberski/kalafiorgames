@@ -46,4 +46,10 @@
   &:hover &__meta {
     color: $color--accent;
   }
+
+  @include breakpoint(phone) {
+    &__meta {
+      display: none;
+    }
+  }
 }

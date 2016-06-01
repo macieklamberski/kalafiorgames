@@ -28,11 +28,17 @@ body {
   flex-wrap: wrap;
   font-family: $font--base;
   font-weight: 400;
-  line-height: $tick-size;
+  line-height: rem($tick-size);
   color: $color--base;
   max-width: rem($width--header + $tick-size + $width--content);
   margin: 0 auto;
   padding: rem($tick-size * 2) rem($tick-size / 2);
+
+  @include breakpoint(phablet) {
+    display: block;
+    max-width: rem($width--content + $tick-size);
+    padding: 0 rem($tick-size / 2) rem($tick-size);
+  }
 }
 
 ul {

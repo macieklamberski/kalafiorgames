@@ -41,7 +41,10 @@
   &__elsewhere {
     li {
       display: inline-block;
-      padding-right: 0.75em;
+
+      + li {
+        padding-left: 0.75em;
+      }
     }
 
     a {
@@ -57,8 +60,33 @@
     }
 
     svg {
+      vertical-align: baseline;
       height: rem($size--base);
       width: auto;
+    }
+  }
+
+  @include breakpoint(phablet) {
+    width: auto;
+    display: flex;
+    margin-bottom: rem($tick-size * 2);
+
+    &__logo {
+      display: none;
+    }
+
+    &__menu {
+      li {
+        display: inline-block;
+
+        + li {
+          padding-left: 0.75em;
+        }
+      }
+    }
+
+    &__elsewhere {
+      margin-left: auto;
     }
   }
 }

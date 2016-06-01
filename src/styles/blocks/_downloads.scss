@@ -45,4 +45,10 @@
       color: $color--accent;
     }
   }
+
+  @include breakpoint(phone) {
+    li {
+      flex-basis: 100%;
+    }
+  }
 }
