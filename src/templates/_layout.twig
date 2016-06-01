@@ -14,7 +14,7 @@
       <link href="http://feeds.feedburner.com/kalafiorgames" rel="alternate" type="application/rss+xml">
     </head>
     <body>
-      <header class="header">
+      <header class="header spacing">
         <a href="" class="header__logo">
           {% include '_logo.svg' %}
         </a>
@@ -29,14 +29,25 @@
             <li{% if selected == 'about' %} class="header__menu__selected"{% endif %}>
               <a href="about">About</a>
             </li>
-            <li>
-              <a href="http://facebook.com/kalafiorgames" rel="external">Facebook</a>
-            </li>
-            <li>
-              <a href="http://twitter.com/kalafiorgames" rel="external">Twitter</a>
-            </li>
           </ul>
         </nav>
+        <ul class="header__elsewhere">
+          <li>
+            <a href="http://facebook.com/kalafiorgames" rel="external">
+              {% include '_icon-facebook.svg' %}
+            </a>
+          </li>
+          <li>
+            <a href="http://twitter.com/kalafiorgames" rel="external">
+              {% include '_icon-twitter.svg' %}
+            </a>
+          </li>
+          <li>
+            <a href="http://kalafiorgames.tumblr.com" rel="external">
+              {% include '_icon-tumblr.svg' %}
+            </a>
+          </li>
+        </ul>
       </header>
       <main class="content spacing">
         {% block content %}{% endblock %}

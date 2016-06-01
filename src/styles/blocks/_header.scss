@@ -2,7 +2,6 @@
   width: $width--header;
 
   &__logo {
-    margin-bottom: rem($tick-size);
     color: $color--heading;
 
     &::before {
@@ -36,6 +35,30 @@
 
     &__selected a {
       color: $color--base;
+    }
+  }
+
+  &__elsewhere {
+    li {
+      display: inline-block;
+      padding-right: 0.75em;
+    }
+
+    a {
+      color: $color--minor;
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        color: $color--accent;
+      }
+    }
+
+    svg {
+      height: rem($size--base);
+      width: auto;
     }
   }
 }
