@@ -13,5 +13,5 @@ require('frontkit')(require('gulp'), {
       ]
     }
   ],
-  "deploy": {}
+  'deploy': require('./deploy.json')
 })
