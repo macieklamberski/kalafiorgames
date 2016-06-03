@@ -8,4 +8,4 @@ Project is using Frontkit static site generator for development. See more inform
 
 ## Copyright
 
-Majority of the site (except *src/images/*) is licensed under [MIT license](http://opensource.org/licenses/MIT). Files in *src/images* directory cannot be used outside the site.
+Majority of the site (except *src/images* and *src/files/downloads*) is licensed under [MIT license](http://opensource.org/licenses/MIT). Files in *src/images* and *src/files/downloads* cannot be used outside the site.
