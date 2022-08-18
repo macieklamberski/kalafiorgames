@@ -1,0 +1,6 @@
+{
+    "name": "lamberski/kalafiorgames",
+    "require": {
+        "twig/twig": "^3.4"
+    }
+}

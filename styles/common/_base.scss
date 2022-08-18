@@ -1,3 +1,5 @@
+@use "sass:math";
+
 html {
   font-size: $size--base;
 
@@ -33,12 +35,12 @@ body {
   max-width: rem($width--header + $tick-size + $width--content);
   min-width: rem(320px);
   margin: 0 auto;
-  padding: rem($tick-size * 2) rem($tick-size / 2);
+  padding: rem($tick-size * 2) rem(math.div($tick-size, 2));
 
   @include breakpoint(phablet) {
     display: block;
     max-width: rem($width--content + $tick-size);
-    padding: 0 rem($tick-size / 2) rem($tick-size);
+    padding: 0 rem(math.div($tick-size, 2)) rem($tick-size);
   }
 }
 

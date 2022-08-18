@@ -1,4 +1,4 @@
-{% extends '_layout.twig' %}
+{% extends 'layouts/_main.twig' %}
 
 {% set selected = 'games' %}
 
@@ -24,14 +24,14 @@
       <ul class="downloads">
         <li>
           <a href="downloads/zenek-zombie.exe">
-            {% include '_icon-installer.svg' %}
+            {% include 'icons/_icon-installer.svg' %}
             <span>Installer (Windows)</span>
             <small>EXE, 16 MB</small>
           </a>
         </li>
         <li>
           <a href="downloads/zenek-zombie-soundtrack.zip">
-            {% include '_icon-soundtrack.svg' %}
+            {% include 'icons/_icon-soundtrack.svg' %}
             <span>Soundtrack + Covers</span>
             <small>Zipped MP3s, 23 MB</small>
           </a>

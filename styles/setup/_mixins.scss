@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin clearfix() {
   &:after {
     content: '';
@@ -23,7 +25,7 @@
 }
 
 @function rem($size--desired) {
-  @return ($size--desired / $size--base) * 1rem;
+  @return math.div($size--desired, $size--base) * 1rem;
 }
 
 @function trans($property, $duration: $duration--base, $delay: 0ms, $easing: ease-in-out) {

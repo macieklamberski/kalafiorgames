@@ -1,4 +1,4 @@
-{% extends '_layout.twig' %}
+{% extends 'layouts/_main.twig' %}
 
 {% set selected = 'games' %}
 
@@ -24,7 +24,7 @@
       <ul class="downloads">
         <li>
           <a href="downloads/elf-elfonsinio.exe">
-            {% include '_icon-installer.svg' %}
+            {% include 'icons/_icon-installer.svg' %}
             <span>Installer (Windows)</span>
             <small>EXE, 4 MB</small>
           </a>

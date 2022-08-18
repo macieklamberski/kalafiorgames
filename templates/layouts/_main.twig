@@ -1,4 +1,4 @@
-{% spaceless %}
+{% apply spaceless %}
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -10,13 +10,13 @@
       <title>{{ title | trim }}</title>
       <base href="{{ tumblr ? 'http://kalafiorgames.com' : '' }}/">
       <link href="{{ tumblr ? '//assets.kalafiorgames.com' : '' }}/favicon.ico" rel="shortcut icon">
-      <link href="{{ tumblr ? '//assets.kalafiorgames.com' : '' }}/styles/main.min.css" rel="stylesheet">
+      <link href="{{ tumblr ? '//assets.kalafiorgames.com' : '' }}/styles/main.css" rel="stylesheet">
       <link href="http://feeds.feedburner.com/kalafiorgames" rel="alternate" type="application/rss+xml">
     </head>
     <body>
       <header class="header spacing">
         <a href="" class="header__logo">
-          {% include '_logo.svg' %}
+          {% include 'icons/_logo.svg' %}
         </a>
         <nav class="header__menu">
           <ul>
@@ -34,17 +34,17 @@
         <ul class="header__elsewhere">
           <li>
             <a href="http://facebook.com/kalafiorgames" rel="external" target="_blank">
-              {% include '_icon-facebook.svg' %}
+              {% include 'icons/_icon-facebook.svg' %}
             </a>
           </li>
           <li>
             <a href="http://twitter.com/kalafiorgames" rel="external" target="_blank">
-              {% include '_icon-twitter.svg' %}
+              {% include 'icons/_icon-twitter.svg' %}
             </a>
           </li>
           <li>
             <a href="http://kalafiorgames.tumblr.com">
-              {% include '_icon-tumblr.svg' %}
+              {% include 'icons/_icon-tumblr.svg' %}
             </a>
           </li>
         </ul>
@@ -52,7 +52,6 @@
       <main class="content spacing">
         {% block content %}{% endblock %}
       </main>
-      <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-78523892-1', 'auto');ga('send', 'pageview');</script>
     </body>
   </html>
-{% endspaceless %}
+{% endapply %}
