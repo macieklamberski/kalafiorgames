@@ -1,4 +1,15 @@
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
+
+# Redirect /page.html to /page.
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule (.+)\.html$ /$1 [R=301,L]
+
+# Rewrite /page to /page.html.
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule .* index.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !\.html$ %{REQUEST_FILENAME}.html [L]
+
+# Define error pages.
+ErrorDocument 404 /404.html
