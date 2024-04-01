@@ -1,0 +1,22 @@
+.media__video {
+    height: 0;
+    padding-bottom: 74.5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.media__video embed,
+.media__video iframe,
+.media__video object,
+.media__video video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none;
+}
+
+.media__video--wide {
+    padding-bottom: 58.8%;
+}

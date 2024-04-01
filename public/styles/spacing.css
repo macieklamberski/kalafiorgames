@@ -1,0 +1,12 @@
+.spacing > * {
+    margin-top: var(--tick);
+}
+
+.spacing--double > * {
+    margin-top: calc(var(--tick) * 2);
+}
+
+.spacing > .outline + *,
+.spacing > :first-child {
+    margin-top: 0;
+}

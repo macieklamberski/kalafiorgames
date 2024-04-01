@@ -1,6 +1,9 @@
 {
-    "name": "lamberski/kalafiorgames",
     "require": {
-        "twig/twig": "^3.4"
+        "lamberski/mikrob": "^1.2"
+    },
+    "scripts": {
+        "serve": "php -d max_execution_time=0 -S localhost:3000 -t public",
+        "deploy": "bash deploy.sh"
     }
 }

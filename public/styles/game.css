@@ -1,0 +1,47 @@
+.game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game::before,
+.game::after {
+    display: none;
+}
+
+// .game__title,
+// .game__meta {
+//     display: none !important;
+// }
+
+.game__poster {
+    height: 130px;
+    background: var(--color--minor);
+    margin-bottom: 10px;
+}
+
+.game__meta {
+    display: flex;
+    margin-left: auto;
+}
+
+.game__meta dd {
+    display: inline-block;
+}
+
+.game__meta dd + dd::before {
+    content: ',\00a0';
+}
+
+.game__meta dd + dt + dd::before {
+    content: '\00a0\00b7\00a0';
+}
+
+.game:hover * {
+    color: var(--color-accent);
+}
+
+/*@include breakpoint(phone) {
+    .game__meta {
+        display: none;
+    }
+}*/

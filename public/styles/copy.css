@@ -1,0 +1,53 @@
+.copy {
+    line-height: var(--tick);
+    color: var(--color--base);
+}
+
+.copy blockquote > div > *,
+.copy blockquote > *,
+.copy > * {
+    margin-top: var(--tick);
+}
+
+.copy blockquote > :first-child,
+.copy > :first-child {
+    margin-top: 0;
+}
+
+.copy ul,
+.copy ol {
+    padding-left: 0.9em;
+}
+
+.copy ul li {
+    list-style-type: disc;
+}
+
+.copy ol li {
+    list-style-type: decimal;
+}
+
+.copy blockquote {
+    padding-left: 1em;
+    color: var(--color--minor);
+    border-left: 0.125em solid var(--color--border);
+}
+
+.copy pre,
+.copy code {
+    font-family: Menlo, Consolas, 'Ubuntu Mono', 'Roboto Mono',
+        'DejaVu Sans Mono', monospace;
+}
+
+.copy strong {
+    font-weight: bold;
+}
+
+.copy em {
+    font-style: italic;
+}
+
+.copy img {
+    max-width: 100%;
+    display: block;
+}

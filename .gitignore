@@ -1,6 +1,4 @@
 .DS_Store
 Thumbs.db
-/build
-/node_modules
 /vendor
-/*.sublime-*
+/deploy.sh

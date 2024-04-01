@@ -1,0 +1,15 @@
+{
+    "view": "templates/index",
+    "title": "Kalafior Games",
+    "description": "Home of games made by Maciej Lamberski. Created to allow players to have fun and gain something from the experience.",
+    "games": ["/elf-elfonsinio-2", "/zenek-zombie", "/elf-elfonsinio"],
+    "shared": {
+        "menu": {
+            "/": "Games",
+            "/blog": "Blog",
+            "/about": "About",
+            "http://facebook.com/kalafiorgames": "Facebook",
+            "http://twitter.com/kalafiorgames": "Twitter"
+        }
+    }
+}

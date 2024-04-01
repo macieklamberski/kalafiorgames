@@ -1,0 +1,17 @@
+.heading {
+    color: var(--color--heading);
+}
+
+.heading::before {
+    display: none;
+}
+
+.heading--primary {
+    font-size: 26rem;
+    font-weight: 700;
+}
+
+.heading--secondary {
+    font-size: 19rem;
+    font-weight: 600;
+}
