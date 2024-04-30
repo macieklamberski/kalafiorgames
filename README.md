@@ -8,7 +8,7 @@ Project is using [Mikrob, a simple website engine](https://github.com/lamberski/
 
 It requires `php` and `composer` to be installed in the system.
 
-Run `composer server` to run the website at `http://localhost:3000`.
+Run `composer install && composer serve` to run the website at `http://localhost:3000`.
 
 ## Copyright
 
