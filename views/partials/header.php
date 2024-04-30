@@ -12,7 +12,7 @@
 </head>
 <body class="container">
     <header class="header spacing">
-        <a href="/" class="header__logo">
+        <a href="/" class="header__logo" title="Back to home">
             <?= Mikrob\load_view('vectors/logo-kalafiorgames') ?>
         </a>
 
