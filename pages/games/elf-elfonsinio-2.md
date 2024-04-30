@@ -1,4 +1,4 @@
----json
+---
 {
     "view": "templates/game",
     "path": "/elf-elfonsinio-2",

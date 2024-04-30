@@ -1,4 +1,4 @@
----json
+---
 {
     "view": "templates/post",
     "path": "/blog/evolving-graphics",

@@ -1,4 +1,4 @@
----json
+---
 {
     "view": "templates/page",
     "title": "About Kalafior Games"

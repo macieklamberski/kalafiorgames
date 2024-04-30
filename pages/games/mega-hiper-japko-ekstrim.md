@@ -1,4 +1,4 @@
----json
+---
 {
     "view": "templates/game",
     "path": "/mega-hiper-japko-ekstrim",
