@@ -1,6 +1,6 @@
 {
     "view": "templates/page",
-    "path": ".*",
+    "path": "/.*/",
     "status": 404,
     "title": "Not found",
     "body": "The URL you requested was stolen from the internet."

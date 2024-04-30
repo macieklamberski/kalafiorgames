@@ -4,4 +4,4 @@ chdir('..');
 
 require 'vendor/autoload.php';
 
-print Mikrob\render_page();
+return Mikrob\render_page();

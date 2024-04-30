@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e66bc2b1d59c52eae3cd381c68008152",
+    "content-hash": "95681c6880f9b6c6436a445576fe8c3f",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -58,11 +58,17 @@
         },
         {
             "name": "lamberski/mikrob",
-            "version": "dev-main",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lamberski/mikrob.git",
+                "reference": "3e8bb3f9f24e5c9737b9187c1c7c7c191b3acf21"
+            },
             "dist": {
-                "type": "path",
-                "url": "../mikrob",
-                "reference": "856c0a74e9088e96a861895b405b3b9166a3ffdd"
+                "type": "zip",
+                "url": "https://api.github.com/repos/lamberski/mikrob/zipball/3e8bb3f9f24e5c9737b9187c1c7c7c191b3acf21",
+                "reference": "3e8bb3f9f24e5c9737b9187c1c7c7c191b3acf21",
+                "shasum": ""
             },
             "require": {
                 "erusev/parsedown": "^1.7"
@@ -73,24 +79,25 @@
                     "functions.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Ultralight site generator for PHP pages.",
-            "transport-options": {
-                "relative": true
-            }
+            "description": "Simple website engine.",
+            "support": {
+                "issues": "https://github.com/lamberski/mikrob/issues",
+                "source": "https://github.com/lamberski/mikrob/tree/v1.3.0"
+            },
+            "time": "2024-04-21T21:37:40+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "lamberski/mikrob": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
