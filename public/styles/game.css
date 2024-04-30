@@ -16,6 +16,8 @@
     height: 130px;
     background: var(--color--minor);
     margin-bottom: 10px;
+    object-fit: cover;
+    object-position: left;
 }
 
 .game__meta {
@@ -33,10 +35,8 @@
     dd + dt + dd::before {
         content: '\00a0\00b7\00a0';
     }
-}
 
-/*@include breakpoint(phone) {
-    .game__meta {
+    @media (max-width: 512px) {
         display: none;
     }
-}*/
+}
