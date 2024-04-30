@@ -16,6 +16,7 @@
     svg {
         width: auto;
         height: calc(var(--tick) * 5);
+        color: var(--color--heading);
     }
 
     @media (max-width: 768px) {
