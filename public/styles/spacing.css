@@ -1,12 +1,9 @@
-.spacing > * {
-    margin-top: var(--tick);
-}
+.spacing {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--tick);
 
-.spacing--double > * {
-    margin-top: calc(var(--tick) * 2);
-}
-
-.spacing > .outline + *,
-.spacing > :first-child {
-    margin-top: 0;
+    &.spacing--double {
+        row-gap: calc(var(--tick) * 2);
+    }
 }

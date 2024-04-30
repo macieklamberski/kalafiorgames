@@ -43,7 +43,7 @@
                         <img src="<?= $media->link ?>" alt="<?= $media->alt ?>">
                     </li>
                 <?php elseif ($media->type === 'video') : ?>
-                    <li class="media__video media__video--wide">
+                    <li class="media__video">
                         <iframe src="<?= $media->link ?>" allowfullscreen></iframe>
                     </li>
                 <?php endif ?>

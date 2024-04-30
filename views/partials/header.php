@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
         <meta name="description" content="<?= $page->description ?>" />
     <?php endif ?>
 </head>
-<body>
+<body class="container">
     <header class="header spacing">
         <a href="/" class="header__logo">
             <?= Mikrob\load_view('vectors/logo-kalafiorgames') ?>
@@ -18,7 +18,9 @@
 
         <nav class="header__menu">
             <?php foreach ($menu as $path => $label) : ?>
-                <a href="<?= $path ?>"><?= $label ?></a>
+                <a href="<?= $path ?>">
+                    <?= $label ?>
+                </a>
             <?php endforeach ?>
         </nav>
     </header>

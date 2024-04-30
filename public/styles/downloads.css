@@ -2,40 +2,40 @@
     margin-top: calc(var(--tick) * -1);
     display: flex;
     flex-wrap: wrap;
-}
 
-.downloads li {
-    flex-basis: 50%;
-    margin-top: var(--tick);
-}
+    li {
+        flex-basis: 50%;
+        margin-top: var(--tick);
+    }
 
-.downloads svg {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: auto;
-    height: 50px;
-    transform: translateY(-50%);
-}
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: auto;
+        height: 50px;
+        transform: translateY(-50%);
+    }
 
-.downloads a {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-left: calc(var(--tick) * 2);
-}
+    a {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-left: calc(var(--tick) * 2);
 
-.downloads a::before {
-    display: none;
-}
-
-.downloads a:hover span,
-.downloads a:hover small {
-    color: var(--color-accent);
-}
-
-/*@include breakpoint(phone) {
-        li {
-            flex-basis: 100%;
+        &::before {
+            display: none;
         }
-    }*/
+
+        &:hover {
+            span,
+            small {
+                color: var(--color-accent);
+            }
+        }
+    }
+
+    @media (max-width: 512px) {
+        flex-direction: column;
+    }
+}

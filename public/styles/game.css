@@ -1,17 +1,16 @@
 .game {
     display: flex;
     flex-wrap: wrap;
-}
 
-.game::before,
-.game::after {
-    display: none;
-}
+    &::before,
+    &::after {
+        display: none;
+    }
 
-// .game__title,
-// .game__meta {
-//     display: none !important;
-// }
+    &:hover * {
+        color: var(--color-accent);
+    }
+}
 
 .game__poster {
     height: 130px;
@@ -22,22 +21,18 @@
 .game__meta {
     display: flex;
     margin-left: auto;
-}
 
-.game__meta dd {
-    display: inline-block;
-}
+    dd {
+        display: inline-block;
+    }
 
-.game__meta dd + dd::before {
-    content: ',\00a0';
-}
+    dd + dd::before {
+        content: ',\00a0';
+    }
 
-.game__meta dd + dt + dd::before {
-    content: '\00a0\00b7\00a0';
-}
-
-.game:hover * {
-    color: var(--color-accent);
+    dd + dt + dd::before {
+        content: '\00a0\00b7\00a0';
+    }
 }
 
 /*@include breakpoint(phone) {
