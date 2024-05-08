@@ -30,6 +30,7 @@ body {
     font-size: var(--size--base);
     line-height: var(--tick);
     color: var(--color--base);
+    background: var(--color-background);
 }
 
 ul {

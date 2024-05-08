@@ -1,6 +1,7 @@
 :root {
     --size--base: 17rem;
     --size--minor: 15rem;
+    --color-background: #fff;
     --color--base: #2e2e2e;
     --color--heading: #1d1d1d;
     --color--border: #e7e7e7;
