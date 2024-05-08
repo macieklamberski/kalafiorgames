@@ -17,6 +17,7 @@ async function fetchPage(url, addToHistory) {
 
         if (addToHistory) {
             window.history.pushState({ path: url }, '', url)
+            window.scrollTo(0, 0)
         }
 
         attachLinkListeners()
