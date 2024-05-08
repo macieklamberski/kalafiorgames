@@ -1,35 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
-    attachLinkListeners()
+    attachListeners()
 
-    window.addEventListener('popstate', () => {
-        fetchPage(window.location.pathname, false)
+    window.addEventListener('popstate', (event) => {
+        const { html, scrollY = 0 } = event.state || {}
+
+        if (html) {
+            updatePage(html, scrollY)
+        } else {
+            fetchPage(window.location.pathname, false)
+        }
     })
 })
 
-async function fetchPage(url, addToHistory) {
+async function fetchPage(path, isForward) {
     try {
-        const newHTML = await (await fetch(url)).text()
-        const newDocument = new DOMParser().parseFromString(newHTML, 'text/html')
+        const html = await (await fetch(path)).text()
 
-        document.title = newDocument.title
-        document.body = newDocument.body
-        document.head = newDocument.head
-
-        if (addToHistory) {
-            window.history.pushState({ path: url }, '', url)
-            window.scrollTo(0, 0)
+        if (isForward) {
+            window.history.pushState({ html, scrollY: window.scrollY }, '', path)
         }
 
-        attachLinkListeners()
+        updatePage(html, 0)
     } catch (error) {
-        window.location.href = url
+        window.location.href = path
     }
 }
 
-function attachLinkListeners() {
+function updatePage(html, scrollY) {
+    const doc = new DOMParser().parseFromString(html, 'text/html')
+
+    document.title = doc.title
+    document.head = doc.head
+    document.body = doc.body
+
+    window.scrollTo(0, scrollY)
+
+    attachListeners()
+}
+
+function attachListeners() {
     document.querySelectorAll('a').forEach((link) => {
-        if (new URL(link.href).origin === window.location.origin) {
-            link.removeEventListener('click', handleClick)
+        if (link.host === window.location.host) {
             link.addEventListener('click', handleClick)
         }
     })
