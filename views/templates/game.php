@@ -23,7 +23,7 @@
         <ul class="downloads">
             <?php foreach ($page->downloads as $download) : ?>
                 <li>
-                    <a href="<?= $download->link ?>">
+                    <a href="<?= $download->link ?>" download>
                         <?= Mikrob\load_view("vectors/icon-$download->icon") ?>
                         <span class="heading heading--secondary"><?= $download->title ?></span>
                         <small class="minor"><?= $download->description ?></small>
