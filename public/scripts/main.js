@@ -1,10 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-    attachListeners()
+    document.documentElement.addEventListener('click', (event) => {
+        const link = event.target.closest('a')
+
+        // TODO: Possibly check the content type of the link target instead of relying on download
+        // links containing 'download' attribtute.
+        if (link && link.host === window.location.host && !link.hasAttribute('download')) {
+            event.preventDefault()
+            fetchPage(link.getAttribute('href'), true)
+        }
+    })
 
     window.addEventListener('popstate', (event) => {
-        const { html, scrollY = 0 } = event.state || {}
+        const { html = null, scrollY = 0 } = event.state || {}
 
         if (html) {
+            // TODO: We could store cache-related header in the state and only load the HTML from
+            // the state if the cache is not expired.
             updatePage(html, scrollY)
         } else {
             fetchPage(window.location.pathname, false)
@@ -30,25 +41,6 @@ function updatePage(html, scrollY) {
     const doc = new DOMParser().parseFromString(html, 'text/html')
 
     document.title = doc.title
-    document.head = doc.head
     document.body = doc.body
-
     window.scrollTo(0, scrollY)
-
-    attachListeners()
-}
-
-function attachListeners() {
-    document.querySelectorAll('a').forEach((link) => {
-        if (link.host === window.location.host) {
-            link.addEventListener('click', handleClick)
-        }
-    })
-}
-
-function handleClick(event) {
-    if (!this.hasAttribute('download')) {
-        event.preventDefault()
-        fetchPage(this.getAttribute('href'), true)
-    }
 }
