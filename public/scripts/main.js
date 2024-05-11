@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.documentElement.addEventListener('click', (event) => {
+    window.addEventListener('click', (event) => {
         const link = event.target.closest('a')
 
         // TODO: Possibly check the content type of the link target instead of relying on download
