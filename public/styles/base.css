@@ -69,9 +69,11 @@ a {
         left: -0.25em;
     }
 
-    &:hover,
-    &:hover::before {
-        color: var(--color--accent);
-        border-color: var(--color--accent);
+    @media (hover: hover) {
+        &:hover,
+        &:hover::before {
+            color: var(--color--accent);
+            border-color: var(--color--accent);
+        }
     }
 }

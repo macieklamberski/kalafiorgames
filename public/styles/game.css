@@ -7,8 +7,10 @@
         display: none;
     }
 
-    &:hover * {
-        color: var(--color-accent);
+    @media (hover: hover) {
+        &:hover * {
+            color: var(--color-accent);
+        }
     }
 }
 

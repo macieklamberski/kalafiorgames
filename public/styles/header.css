@@ -40,8 +40,10 @@
             bottom: 0;
             left: -1em;
         }
+    }
 
-        &:not(:hover) {
+    @media (hover: hover) {
+        a:not(:hover) {
             color: var(--color--minor);
         }
     }
