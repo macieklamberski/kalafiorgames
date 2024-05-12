@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95681c6880f9b6c6436a445576fe8c3f",
+    "content-hash": "f06dbc829ea24aee7ef64c68c9d93172",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -58,16 +58,16 @@
         },
         {
             "name": "lamberski/mikrob",
-            "version": "v1.3.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lamberski/mikrob.git",
-                "reference": "3e8bb3f9f24e5c9737b9187c1c7c7c191b3acf21"
+                "reference": "0fcb633e7ff7a66d5d6e0d26f7681236514dd492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lamberski/mikrob/zipball/3e8bb3f9f24e5c9737b9187c1c7c7c191b3acf21",
-                "reference": "3e8bb3f9f24e5c9737b9187c1c7c7c191b3acf21",
+                "url": "https://api.github.com/repos/lamberski/mikrob/zipball/0fcb633e7ff7a66d5d6e0d26f7681236514dd492",
+                "reference": "0fcb633e7ff7a66d5d6e0d26f7681236514dd492",
                 "shasum": ""
             },
             "require": {
@@ -86,9 +86,9 @@
             "description": "Simple website engine.",
             "support": {
                 "issues": "https://github.com/lamberski/mikrob/issues",
-                "source": "https://github.com/lamberski/mikrob/tree/v1.3.0"
+                "source": "https://github.com/lamberski/mikrob/tree/v1.4.1"
             },
-            "time": "2024-04-21T21:37:40+00:00"
+            "time": "2024-05-09T22:12:02+00:00"
         }
     ],
     "packages-dev": [],
