@@ -5,8 +5,9 @@
     "title": "Elf Elfonsinio",
     "description": "Elf Elfonsinio must decorate the tree correctly to make up for his mischief. Select ornaments, place them right, and score big in this festive arcade game!",
     "meta": [
+        { "label": "Language", "value": ["English", "Polish"] },
         { "label": "Platform", "value": "Windows" },
-        { "label": "Language", "value": ["English", "Polish"] }
+        { "label": "Year", "value": "2007" }
     ],
     "thumb": "/images/elf-elfonsinio/thumb.png",
     "media": [

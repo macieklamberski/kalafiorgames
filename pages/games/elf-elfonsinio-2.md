@@ -5,8 +5,9 @@
     "title": "Elf Elfonsinio 2",
     "description": "Join Elf Elfonsinio in EE2 for an epic North Pole quest! Help Santa, collect items, and dodge foes across seasons.",
     "meta": [
+        { "label": "Language", "value": ["English", "Polish"] },
         { "label": "Platform", "value": "Windows" },
-        { "label": "Language", "value": ["English", "Polish"] }
+        { "label": "Year", "value": "2008" }
     ],
     "thumb": "/images/elf-elfonsinio-2/thumb.png",
     "media": [

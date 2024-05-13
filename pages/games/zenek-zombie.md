@@ -5,8 +5,9 @@
     "title": "Zenek Zombie",
     "description": "Take on the role of Zenek Zombie in a mix of platforming and RPG adventure as you embark on a quest to rescue your kidnapped wife.",
     "meta": [
+        { "label": "Language", "value": ["English", "Polish"] },
         { "label": "Platform", "value": "Windows" },
-        { "label": "Language", "value": ["English", "Polish"] }
+        { "label": "Year", "value": "2007" }
     ],
     "thumb": "/images/zenek-zombie/thumb.png",
     "media": [

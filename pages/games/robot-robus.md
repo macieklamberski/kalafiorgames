@@ -6,8 +6,9 @@
     "description": "Embark on secret missions as Robuś the Robot from SAC, navigating unique worlds and dangers assigned by Boss Bossy.",
     "thumb": "/images/robot-robus/thumb.png",
     "meta": [
+        { "label": "Language", "value": "Polish" },
         { "label": "Platform", "value": "Windows" },
-        { "label": "Language", "value": "Polish" }
+        { "label": "Year", "value": "2005" }
     ],
     "media": [
         {

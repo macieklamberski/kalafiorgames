@@ -5,8 +5,9 @@
     "title": "Kromka & Chleba",
     "description": "Leap into the role of Kromka, bouncing your way to outsmart foes and rescue Chleba with brainpower and a trusty spring!",
     "meta": [
+        { "label": "Language", "value": "Polish" },
         { "label": "Platform", "value": "Windows" },
-        { "label": "Language", "value": "Polish" }
+        { "label": "Year", "value": "2005" }
     ],
     "thumb": "/images/kromka-and-chleba/thumb.png",
     "media": [

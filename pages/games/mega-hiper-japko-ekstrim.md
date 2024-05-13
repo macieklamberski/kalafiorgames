@@ -5,8 +5,9 @@
     "title": "Mega Hiper Japko Ekstrim",
     "description": "Rack up points by crushing boulders, grabbing power-ups like Mega Jump or double guns, and staying alive for high scores in this intense survival game!",
     "meta": [
+        { "label": "Language", "value": "Polish" },
         { "label": "Platform", "value": "Windows" },
-        { "label": "Language", "value": "Polish" }
+        { "label": "Year", "value": "2005" }
     ],
     "thumb": "/images/mega-hiper-japko-ekstrim/thumb.png",
     "media": [
