@@ -7,7 +7,7 @@
 
     @media (max-width: 768px) {
         flex-direction: column;
-        padding-top: var(--tick);
+        padding: var(--tick) calc(var(--tick) / 2);
         max-width: calc(var(--width--content) + var(--tick));
     }
 }
