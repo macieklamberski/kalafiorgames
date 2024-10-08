@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (event) => {
-        const link = event.target.closest('a')
+        const anchor = event.target.closest('a')
+        const isActive = anchor?.host === window.location.host
+        const isLink = !anchor?.hasAttribute('download')
 
         // TODO: Possibly check the content type of the link target instead of relying on download
         // links containing 'download' attribtute.
-        if (link && link.host === window.location.host && !link.hasAttribute('download')) {
+        if (anchor && isActive && isLink) {
             event.preventDefault()
-            fetchPage(link.getAttribute('href'), true)
+            fetchPage(anchor.getAttribute('href'), true)
         }
     })
 
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-async function fetchPage(path, isForward) {
+const fetchPage = async (path, isForward) => {
     try {
         const html = await (await fetch(path)).text()
 
@@ -37,7 +39,7 @@ async function fetchPage(path, isForward) {
     }
 }
 
-function updatePage(html, scrollY) {
+const updatePage = (html, scrollY) => {
     const doc = new DOMParser().parseFromString(html, 'text/html')
 
     document.title = doc.title
