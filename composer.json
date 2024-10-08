@@ -1,6 +1,6 @@
 {
     "require": {
-        "lamberski/mikrob": "^1.4"
+        "macieklamberski/mikrob": "^1.4"
     },
     "scripts": {
         "dev": [

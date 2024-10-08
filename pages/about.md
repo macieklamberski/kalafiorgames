@@ -9,4 +9,4 @@ Kalafior Games is the home of games made by [Maciej Lamberski](http://lamberski.
 
 If you have any technical problems with games, want to say hello or anything else you can imagine, please use this email address: [hello@kalafiorgames.com](mailto:hello@kalafiorgames.com).
 
-Psst! If you're a fellow nerd like me, be sure to check out [the source code of this website on GitHub](http://github.com/lamberski/kalafiorgames).
+Psst! If you're a fellow nerd like me, be sure to check out [the source code of this website on GitHub](http://github.com/macieklamberski/kalafiorgames).

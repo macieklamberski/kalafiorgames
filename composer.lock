@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f06dbc829ea24aee7ef64c68c9d93172",
+    "content-hash": "8b561e9bef32e43a3d0918bb506cf370",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -57,17 +57,17 @@
             "time": "2019-12-30T22:54:17+00:00"
         },
         {
-            "name": "lamberski/mikrob",
-            "version": "v1.4.1",
+            "name": "macieklamberski/mikrob",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lamberski/mikrob.git",
-                "reference": "0fcb633e7ff7a66d5d6e0d26f7681236514dd492"
+                "url": "https://github.com/macieklamberski/mikrob.git",
+                "reference": "f6089cd9dbe44750f6a7febddc053a11d4ad20ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lamberski/mikrob/zipball/0fcb633e7ff7a66d5d6e0d26f7681236514dd492",
-                "reference": "0fcb633e7ff7a66d5d6e0d26f7681236514dd492",
+                "url": "https://api.github.com/repos/macieklamberski/mikrob/zipball/f6089cd9dbe44750f6a7febddc053a11d4ad20ca",
+                "reference": "f6089cd9dbe44750f6a7febddc053a11d4ad20ca",
                 "shasum": ""
             },
             "require": {
@@ -85,19 +85,19 @@
             ],
             "description": "Simple website engine.",
             "support": {
-                "issues": "https://github.com/lamberski/mikrob/issues",
-                "source": "https://github.com/lamberski/mikrob/tree/v1.4.1"
+                "issues": "https://github.com/macieklamberski/mikrob/issues",
+                "source": "https://github.com/macieklamberski/mikrob/tree/v1.4.3"
             },
-            "time": "2024-05-09T22:12:02+00:00"
+            "time": "2024-10-08T13:20:19+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
