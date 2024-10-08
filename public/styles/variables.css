@@ -1,4 +1,5 @@
 :root {
+    --font--base: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     --size--base: 17rem;
     --size--minor: 15rem;
     --color-background: #fff;
@@ -8,6 +9,8 @@
     --color--minor: #aaa;
     --color--accent: #62940d;
     --tick: 30rem;
+    --width-min-body: 384rem;
     --width--header: 180rem;
     --width--content: 500rem;
+    --duration--base: 2s;
 }

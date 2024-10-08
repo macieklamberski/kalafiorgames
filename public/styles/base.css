@@ -12,14 +12,15 @@
 }
 
 html {
-    font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     font-size: 1px;
+    min-width: var(--width-min-body);
 
     &::before {
         content: '';
         position: absolute;
         inset: 0;
-        height: 3px;
+        min-width: var(--width-min-body);
+        height: 3rem;
         background: var(--color--accent);
     }
 }
@@ -41,7 +42,7 @@ svg,
 img {
     vertical-align: top;
     width: 100%;
-    fill: currentColor;
+    fill: currentcolor;
 }
 
 a {

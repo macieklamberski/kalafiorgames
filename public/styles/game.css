@@ -15,9 +15,9 @@
 }
 
 .game__poster {
-    height: 130px;
+    height: 130rem;
     background: var(--color--minor);
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     object-fit: cover;
     object-position: left;
 }
