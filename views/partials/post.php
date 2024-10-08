@@ -1,5 +1,5 @@
 <article class="spacing">
-    <?php if (isset($isList)) : ?>
+    <?php if (isset($is_list)) : ?>
         <h2 class="heading heading--primary">
             <a href="<?= $post->path ?>">
                 <?= $post->title ?>

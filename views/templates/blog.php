@@ -10,7 +10,7 @@
 
 <section class="spacing spacing--double">
     <?php foreach ($posts as $path => $post) : ?>
-        <?= Mikrob\load_view('partials/post', ['post' => $post, 'isList' => true]) ?>
+        <?= Mikrob\load_view('partials/post', ['post' => $post, 'is_list' => true]) ?>
     <?php endforeach ?>
 </section>
 
