@@ -61,13 +61,10 @@ a {
         border-bottom: 2rem solid var(--color--border);
     }
 
-    &:after {
+    &::after {
         content: '';
         position: absolute;
-        top: -0.25em;
-        right: -0.25em;
-        bottom: -0.25em;
-        left: -0.25em;
+        inset: -0.25em;
     }
 
     @media (hover: hover) {
