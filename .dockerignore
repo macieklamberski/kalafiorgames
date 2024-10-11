@@ -1,0 +1,6 @@
+.git*
+.editorconfig
+.prettier*
+vendor
+Dockerfile
+README.md
