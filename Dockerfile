@@ -1,7 +1,8 @@
 FROM php:8.3-apache
 RUN a2enmod rewrite
-WORKDIR /var/www/html
+RUN apt-get update && apt-get install -y git unzip
 
+WORKDIR /var/www/html
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY . .
 RUN composer install --no-dev --optimize-autoloader
