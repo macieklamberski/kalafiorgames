@@ -1,0 +1,13 @@
+FROM php:8.3-apache
+RUN a2enmod rewrite
+RUN apt-get update && apt-get install -y unzip
+RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+WORKDIR /var/www
+COPY --chown=www-data:www-data . .
+RUN composer install --no-dev --optimize-autoloader
+RUN rm -rf /var/www/html && ln -s /var/www/public /var/www/html
+
+EXPOSE 80
+CMD ["apache2-foreground"]
