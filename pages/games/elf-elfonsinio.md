@@ -1,40 +1,40 @@
 ---
 {
-    "view": "templates/game",
-    "path": "/elf-elfonsinio",
-    "title": "Elf Elfonsinio",
-    "description": "Elf Elfonsinio must decorate the tree correctly to make up for his mischief. Select ornaments, place them right, and score big in this festive arcade game!",
-    "meta": [
-        { "label": "Language", "value": ["English", "Polish"] },
-        { "label": "Platform", "value": "Windows" },
-        { "label": "Year", "value": "2007" }
-    ],
-    "thumb": "/images/elf-elfonsinio/thumb.png",
-    "media": [
-        {
-            "type": "image",
-            "link": "/images/elf-elfonsinio/screen-2.png",
-            "alt": "Screen #2"
-        },
-        {
-            "type": "image",
-            "link": "/images/elf-elfonsinio/screen-4.png",
-            "alt": "Screen #4"
-        },
-        {
-            "type": "image",
-            "link": "/images/elf-elfonsinio/screen-3.png",
-            "alt": "Screen #3"
-        }
-    ],
-    "downloads": [
-        {
-            "link": "/downloads/elf-elfonsinio.exe",
-            "icon": "installer",
-            "title": "Installer (Windows)",
-            "description": "EXE, 4 MB"
-        }
-    ]
+  "view": "templates/Game.tsx",
+  "path": "/elf-elfonsinio",
+  "title": "Elf Elfonsinio",
+  "description": "Elf Elfonsinio must decorate the tree correctly to make up for his mischief. Select ornaments, place them right, and score big in this festive arcade game!",
+  "meta": [
+    { "label": "Language", "value": ["English", "Polish"] },
+    { "label": "Platform", "value": "Windows" },
+    { "label": "Year", "value": "2007" }
+  ],
+  "thumb": "/images/elf-elfonsinio/thumb.png",
+  "media": [
+    {
+      "type": "image",
+      "link": "/images/elf-elfonsinio/screen-2.png",
+      "alt": "Screen #2"
+    },
+    {
+      "type": "image",
+      "link": "/images/elf-elfonsinio/screen-4.png",
+      "alt": "Screen #4"
+    },
+    {
+      "type": "image",
+      "link": "/images/elf-elfonsinio/screen-3.png",
+      "alt": "Screen #3"
+    }
+  ],
+  "downloads": [
+    {
+      "link": "/downloads/elf-elfonsinio.exe",
+      "type": "installer",
+      "title": "Installer (Windows)",
+      "description": "EXE, 4 MB"
+    }
+  ]
 }
 ---
 

@@ -1,35 +1,35 @@
 ---
 {
-    "view": "templates/game",
-    "path": "/kromka-and-chleba",
-    "title": "Kromka & Chleba",
-    "description": "Leap into the role of Kromka, bouncing your way to outsmart foes and rescue Chleba with brainpower and a trusty spring!",
-    "meta": [
-        { "label": "Language", "value": "Polish" },
-        { "label": "Platform", "value": "Windows" },
-        { "label": "Year", "value": "2005" }
-    ],
-    "thumb": "/images/kromka-and-chleba/thumb.png",
-    "media": [
-        {
-            "type": "image",
-            "link": "/images/kromka-and-chleba/screen-2.png",
-            "alt": "Screen #2"
-        },
-        {
-            "type": "image",
-            "link": "/images/kromka-and-chleba/screen-4.png",
-            "alt": "Screen #4"
-        }
-    ],
-    "downloads": [
-        {
-            "link": "/downloads/kromka-and-chleba.exe",
-            "icon": "installer",
-            "title": "Installer (Windows)",
-            "description": "EXE, 1 MB"
-        }
-    ]
+  "view": "templates/Game.tsx",
+  "path": "/kromka-and-chleba",
+  "title": "Kromka & Chleba",
+  "description": "Leap into the role of Kromka, bouncing your way to outsmart foes and rescue Chleba with brainpower and a trusty spring!",
+  "meta": [
+    { "label": "Language", "value": "Polish" },
+    { "label": "Platform", "value": "Windows" },
+    { "label": "Year", "value": "2005" }
+  ],
+  "thumb": "/images/kromka-and-chleba/thumb.png",
+  "media": [
+    {
+      "type": "image",
+      "link": "/images/kromka-and-chleba/screen-2.png",
+      "alt": "Screen #2"
+    },
+    {
+      "type": "image",
+      "link": "/images/kromka-and-chleba/screen-4.png",
+      "alt": "Screen #4"
+    }
+  ],
+  "downloads": [
+    {
+      "link": "/downloads/kromka-and-chleba.exe",
+      "type": "installer",
+      "title": "Installer (Windows)",
+      "description": "EXE, 1 MB"
+    }
+  ]
 }
 ---
 

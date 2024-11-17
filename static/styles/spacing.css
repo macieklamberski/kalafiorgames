@@ -1,0 +1,9 @@
+.spacing {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--tick);
+
+  &.spacing--double {
+    row-gap: calc(var(--tick) * 2);
+  }
+}

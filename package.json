@@ -1,0 +1,16 @@
+{
+  "name": "kalafiorgames",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch index.ts",
+    "start": "bun index.ts"
+  },
+  "dependencies": {
+    "mikrob": "^2.1.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "bun": "^1.1.34"
+  }
+}

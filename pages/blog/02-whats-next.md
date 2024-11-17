@@ -1,9 +1,9 @@
 ---
 {
-    "view": "templates/post",
-    "path": "/blog/whats-next",
-    "title": "What’s next?",
-    "published": "2012-03-11"
+  "view": "templates/Post.tsx",
+  "path": "/blog/whats-next",
+  "title": "What’s next?",
+  "published": "2012-03-11"
 }
 ---
 

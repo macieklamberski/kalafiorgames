@@ -1,9 +1,9 @@
 ---
 {
-    "view": "templates/post",
-    "path": "/blog/carte-blanche",
-    "title": "Carte blanche",
-    "published": "2011-01-29"
+  "view": "templates/Post.tsx",
+  "path": "/blog/carte-blanche",
+  "title": "Carte blanche",
+  "published": "2011-01-29"
 }
 ---
 

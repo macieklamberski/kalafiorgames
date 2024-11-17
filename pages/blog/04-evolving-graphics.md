@@ -1,9 +1,9 @@
 ---
 {
-    "view": "templates/post",
-    "path": "/blog/evolving-graphics",
-    "title": "Evolving graphics",
-    "published": "2013-02-27"
+  "view": "templates/Post.tsx",
+  "path": "/blog/evolving-graphics",
+  "title": "Evolving graphics",
+  "published": "2013-02-27"
 }
 ---
 

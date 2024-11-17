@@ -1,0 +1,7 @@
+{
+  "view": "templates/Archive.tsx",
+  "path": "/archive",
+  "title": "Archive",
+  "description": "Hello and welcome to the secret Kalafior Games Archive! Here, on meticulously organized shelves, you'll find boxes containing all the games that started this incredible journey. So cool.",
+  "games": ["/robot-robus", "/kromka-and-chleba", "/zupojadek", "/mega-hiper-japko-ekstrim"]
+}

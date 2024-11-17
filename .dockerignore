@@ -1,6 +1,9 @@
+Thumbs.db
+.DS_Store
 .git*
 .editorconfig
-.prettier*
-vendor
+.gitignore
+biome.json
+node_modules
 Dockerfile
 README.md

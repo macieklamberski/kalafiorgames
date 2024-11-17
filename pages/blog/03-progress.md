@@ -1,9 +1,9 @@
 ---
 {
-    "view": "templates/post",
-    "path": "/blog/progress",
-    "title": "Progress",
-    "published": "2013-01-05"
+  "view": "templates/Post.tsx",
+  "path": "/blog/progress",
+  "title": "Progress",
+  "published": "2013-01-05"
 }
 ---
 

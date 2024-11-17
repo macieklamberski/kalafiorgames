@@ -6,9 +6,9 @@ This is repository with source of [Kalafior Games](http://kalafiorgames.com)—w
 
 Project is using [Mikrob, a simple website engine](https://github.com/macieklamberski/mikrob) to render the pages.
 
-It requires `php` and `composer` to be installed in the system.
+It requires `bun` to be installed in the system.
 
-Run `composer install && composer dev` to run the website at `http://localhost:3000`.
+Run `bun install && bun dev` to run the website at `http://localhost:3000`.
 
 ## Copyright
 
