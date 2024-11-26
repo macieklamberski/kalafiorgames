@@ -1,5 +1,4 @@
 FROM oven/bun:1-alpine
-WORKDIR /home/node
 
 COPY package.json .
 COPY bun.lockb .
