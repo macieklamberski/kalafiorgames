@@ -9,7 +9,3 @@ Project is using [Mikrob, a simple website engine](https://github.com/macieklamb
 It requires `bun` to be installed in the system.
 
 Run `bun install && bun dev` to run the website at `http://localhost:3000`.
-
-## Copyright
-
-Majority of the site (except _public/images_ and _public/downloads_) is licensed under [MIT license](http://opensource.org/licenses/MIT). Files in _public/images_ and _public/downloads_ cannot be used outside the site.
