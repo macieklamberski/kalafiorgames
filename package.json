@@ -7,10 +7,9 @@
     "start": "bun index.ts"
   },
   "dependencies": {
-    "mikrob": "^2.1.1"
+    "mikrob": "^2.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "bun": "^1.1.34"
+    "@biomejs/biome": "^1.9.4"
   }
 }
