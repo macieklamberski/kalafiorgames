@@ -1,0 +1,4 @@
+services:
+  kalafiorgames:
+    build: .
+    restart: always
