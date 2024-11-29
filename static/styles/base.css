@@ -13,16 +13,6 @@
 
 html {
   font-size: 1px;
-  min-width: var(--width-min-body);
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    min-width: var(--width-min-body);
-    height: 3rem;
-    background: var(--color--accent);
-  }
 }
 
 body {
@@ -32,6 +22,15 @@ body {
   line-height: var(--tick);
   color: var(--color--base);
   background: var(--color-background);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    min-width: var(--width-min-body);
+    height: 3rem;
+    background: var(--color--accent);
+  }
 }
 
 ul {
