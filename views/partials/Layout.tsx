@@ -16,6 +16,11 @@ export const Layout: FC<LayoutProps> = ({ title, description, children }) => {
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>{title}</title>
         {description && <meta name="description" content={description} />}
+        <script
+          async
+          src="https://umami.lamberski.com/stats"
+          data-website-id="bf823301-f78b-4eef-ab53-4c8774882306"
+        />
       </head>
       <body class="container">
         <Header />
